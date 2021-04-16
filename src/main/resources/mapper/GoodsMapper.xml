@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.obito.seckill.mapper.GoodsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.obito.seckill.pojo.Goods">
+        <id column="id" property="id" />
+        <result column="good_name" property="goodName" />
+        <result column="good_title" property="goodTitle" />
+        <result column="good_img" property="goodImg" />
+        <result column="good_detail" property="goodDetail" />
+        <result column="good_price" property="goodPrice" />
+        <result column="good_stock" property="goodStock" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, good_name, good_title, good_img, good_detail, good_price, good_stock
+    </sql>
+
+</mapper>
